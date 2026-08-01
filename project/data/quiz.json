@@ -1,0 +1,35 @@
+[
+  {
+    "question": "What am I most excited to do when I finally meet you again",
+    "options": [
+      "Give you the deepest most sensual handshake ever",
+      "Act cool and mysterious",
+      "Walk away dramatically"
+    ],
+    "correctIndex": 0,
+    "correctResponse": "Exactly 😭 Handshake first then hugs then cheek munches in that order",
+    "wrongResponse": "Wrong 😭 The handshake comes first obviously"
+  },
+  {
+    "question": "What time does the sunrise happen for me nowadays",
+    "options": [
+      "6 in the morning",
+      "Whenever your VC comes around 5 30",
+      "Whenever I wake up"
+    ],
+    "correctIndex": 1,
+    "correctResponse": "Yesss ❤️ 5 30 is the sunrise to my day",
+    "wrongResponse": "Nope 😤 My sunrise starts when your VC does"
+  },
+  {
+    "question": "What is a sugar truck actually referring to",
+    "options": [
+      "Me bringing you sweets",
+      "A truck full of sugar",
+      "My unnecessarily long paragraphs that somehow never end"
+    ],
+    "correctIndex": 2,
+    "correctResponse": "Correct 😭 You survived enough of them to know exactly what they are",
+    "wrongResponse": "Wrong 😭 You've clearly not been paying attention to my Great Wall of China grade sugar trucks"
+  }
+]

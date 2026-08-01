@@ -1,0 +1,467 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Girlfriend's Day</title>
+
+  <!-- Fonts: Poppins for body/UI, Caveat for handwritten moments -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Caveat:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <!-- ============================================ -->
+    <!-- CHAPTER 0 — LOADING SCREEN                    -->
+    <!-- Locks scroll until the story is ready to open -->
+    <!-- ============================================ -->
+    <div id="loading-screen">
+      <div class="loading-dragon">🐉</div>
+      <p class="loading-text">Loading today's adventure<span class="loading-dots"><span>.</span><span>.</span><span>.</span></span></p>
+    </div>
+
+    <!-- Fixed star field sits behind every chapter -->
+    <div id="star-field" aria-hidden="true"></div>
+
+    <main id="story">
+
+      <!-- ============================================================ -->
+      <!-- CHAPTER 1 — HI                                                -->
+      <!-- Paced as individual beats. Each beat is its own thought;      -->
+      <!-- scrolling is what reveals the next one. Don't collapse these  -->
+      <!-- back into paragraphs — the pacing IS the joke's timing.       -->
+      <!-- ============================================================ -->
+      <section class="chapter" id="chapter-1" data-chapter="1">
+
+        <!-- Hero frame: just the sky and the dragon, nothing else yet -->
+        <div class="hero-frame">
+          <img
+            src="assets/dragons/night-fury.png"
+            alt=""
+            class="dragon dragon--night-fury"
+            onerror="this.style.display='none'"
+          >
+        </div>
+
+        <div class="beats" id="ch1-beats">
+
+          <div class="beat beat--hi">
+            <p class="line handwritten">Hi, there sona meri jaan </p>
+          </div>
+
+          <div class="beat">
+            <p class="line">So...</p>
+          </div>
+
+          <div class="beat">
+            <p class="line">you know how I basically don't talk<br>this much to anyone else on earth?</p>
+          </div>
+
+          <div class="beat">
+            <p class="line">Yeah. That's kind of just a you thing.</p>
+          </div>
+
+          <div class="beat beat--pause" aria-hidden="true"><span class="pause-mark">···</span></div>
+
+          <div class="beat">
+            <p class="line">I know what you're already thinking.</p>
+          </div>
+
+          <div class="beat">
+            <p class="line">"Oh no. Another sugar truck."</p>
+          </div>
+
+          <div class="beat">
+            <p class="line">Except this time I didn't just write you<br>a paragraph.</p>
+          </div>
+
+          <div class="beat">
+            <p class="line">I built you an entire website instead.</p>
+          </div>
+
+          <div class="beat">
+            <p class="line">Don't worry.</p>
+          </div>
+
+          <div class="beat">
+            <p class="line">I'll still eat your ears off in it.<br>Probably more than usual, actually.</p>
+          </div>
+
+          <div class="beat">
+            <!-- callback: this "ears" bit gets paid off again at the very end -->
+            <p class="line line--aside">(No promises I'll stop. Ever.)</p>
+          </div>
+
+          <div class="beat">
+            <button class="btn btn--fly" id="fly-btn">
+              <span>Let's Fly</span> <span class="arrow">→</span>
+            </button>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ============================================================ -->
+      <!-- CHAPTER 2 — WHERE IT ALL BEGAN (Best Friends)                  -->
+      <!-- ============================================================ -->
+      <section class="chapter" id="chapter-2" data-chapter="2">
+        <div class="beats">
+
+          <div class="beat beat--compact">
+            <p class="kicker">chapter one</p>
+            <h2 class="chapter-title">Where It All Began</h2>
+          </div>
+
+          <div class="beat">
+            <p class="body-copy">We met in college. Ordinary enough, right?</p>
+          </div>
+
+          <div class="beat">
+            <p class="body-copy">Except here's the part that still makes me laugh — you weren't even supposed to end up talking to me.</p>
+          </div>
+
+          <div class="beat">
+            <p class="body-copy">You liked one of my friends first.</p>
+          </div>
+
+          <div class="beat">
+            <p class="body-copy">He's the one who introduced us.</p>
+          </div>
+
+          <div class="beat beat--pause" aria-hidden="true"><span class="pause-mark">···</span></div>
+
+          <div class="beat">
+            <p class="body-copy">Neither of us had the slightest idea what that one introduction was quietly setting off.</p>
+          </div>
+
+          <div class="beat">
+            <p class="body-copy">It started as texting. Normal, forgettable texting.</p>
+          </div>
+
+          <div class="beat">
+            <p class="body-copy">Except it didn't stay normal for very long.</p>
+          </div>
+
+          <div class="beat">
+            <p class="body-copy">Somehow those texts turned into 4 AM conversations that neither of us had planned on having.</p>
+          </div>
+
+          <div class="beat">
+            <p class="body-copy">And somewhere in there, it already felt like I'd known you a lot longer than I actually had.</p>
+          </div>
+
+          <div class="beat beat--photo">
+            <!--
+              PHOTO PLACEHOLDER 1
+              Drop your image at: assets/photos/photo1.jpg
+              Recommended: a photo from when you first met / early friendship
+            -->
+            <div class="photo-frame photo-frame--tilt">
+              <img
+                src="assets/photos/photo1.jpeg"
+                alt="A memory from where it all began"
+                onerror="this.closest('.photo-frame').classList.add('photo-frame--empty')"
+              >
+              <div class="photo-placeholder">
+                <span class="placeholder-icon">📷</span>
+                <span class="placeholder-label">photo1.jpg goes here</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ============================================================ -->
+      <!-- CHAPTER 3 — SOMEWHERE ALONG THE WAY                            -->
+      <!-- ============================================================ -->
+      <section class="chapter" id="chapter-3" data-chapter="3">
+        <div class="beats">
+
+          <div class="beat beat--compact">
+            <p class="kicker">chapter two</p>
+            <h2 class="chapter-title">Somewhere Along The Way</h2>
+          </div>
+
+          <div class="beat beat--photo">
+            <!--
+              PHOTO PLACEHOLDER 2
+              Drop your image at: assets/photos/photo2.jpg
+              Recommended: a photo from when things started to shift
+            -->
+            <div class="photo-frame photo-frame--stacked">
+              <img
+                src="assets/photos/photo2.jpeg"
+                alt="Somewhere along the way"
+                onerror="this.closest('.photo-frame').classList.add('photo-frame--empty')"
+              >
+              <div class="photo-placeholder">
+                <span class="placeholder-icon">📷</span>
+                <span class="placeholder-label">photo2.jpg goes here</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="beat">
+            <p class="body-copy">I can't point to the exact day my best friend quietly stopped being just my best friend.</p>
+          </div>
+
+          <div class="beat beat--pause" aria-hidden="true"><span class="pause-mark">···</span></div>
+
+          <div class="beat">
+            <p class="body-copy">There wasn't some big dramatic moment for it, either.</p>
+          </div>
+
+          <div class="beat">
+            <p class="body-copy">You just slowly stopped needing an introduction.</p>
+          </div>
+
+          <div class="beat">
+            <p class="body-copy">You started telling me things about yourself first, before I'd even asked.</p>
+          </div>
+
+          <div class="beat">
+            <p class="body-copy">And I listened. Eventually I started doing the same.</p>
+          </div>
+
+          <div class="beat">
+            <p class="body-copy">One day I just realized — you'd become the first person I wanted to tell everything to.</p>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ============================================================ -->
+      <!-- CHAPTER 4 — DISTANCE                                          -->
+      <!-- ============================================================ -->
+      <section class="chapter chapter--sparse" id="chapter-4" data-chapter="4">
+        <!-- Two dragons, far apart, if assets exist -->
+        <img
+          src="assets/dragons/night-fury.png"
+          alt=""
+          class="dragon dragon--distance-left"
+          onerror="this.style.display='none'"
+        >
+        <img
+          src="assets/dragons/light-fury.png"
+          alt=""
+          class="dragon dragon--distance-right"
+          onerror="this.style.display='none'"
+        >
+
+        <div class="beats beats--tight">
+
+          <div class="beat beat--compact">
+            <p class="kicker">chapter three</p>
+            <h2 class="chapter-title chapter-title--hopeful">Distance</h2>
+          </div>
+
+          <div class="beat">
+            <p class="body-copy body-copy--tight">You're doing your CA. I'm doing my MBA.</p>
+          </div>
+
+          <div class="beat">
+            <p class="body-copy body-copy--tight">Somehow that math adds up to about 2500 kilometers between us.</p>
+          </div>
+
+          <div class="beat beat--pause" aria-hidden="true"><span class="pause-mark">···</span></div>
+
+          <div class="beat">
+            <p class="body-copy body-copy--tight">Some days that number feels loud.</p>
+          </div>
+
+          <div class="beat">
+            <p class="body-copy body-copy--tight">Most days, it really doesn't feel like much at all.</p>
+          </div>
+
+          <div class="beat">
+            <p class="body-copy body-copy--tight">Because every evening, at 5:30, you call.</p>
+          </div>
+
+          <div class="beat">
+            <p class="body-copy body-copy--tight">5:30 is the sunrise to my day.</p>
+          </div>
+
+          <div class="beat beat--pause" aria-hidden="true"><span class="pause-mark">···</span></div>
+
+          <div class="beat">
+            <p class="body-copy body-copy--tight">Maybe we're not late.</p>
+          </div>
+
+          <div class="beat">
+            <p class="body-copy body-copy--tight">Maybe we're just early to a future that's worth waiting for.</p>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ============================================================ -->
+      <!-- CHAPTER 5 — LITTLE THINGS (interactive)                        -->
+      <!-- ============================================================ -->
+      <section class="chapter chapter--playful" id="chapter-5" data-chapter="5">
+        <div class="chapter-inner chapter-inner--wide">
+
+          <div class="beat beat--compact">
+            <p class="kicker">chapter four</p>
+            <h2 class="chapter-title">Little Things</h2>
+          </div>
+
+          <div class="beat">
+            <p class="body-copy">A few titles you've earned, whether you wanted them or not.</p>
+          </div>
+
+          <div class="card-grid" id="card-grid">
+            <!-- Cards are populated by JS from data/memories.json -->
+          </div>
+
+          <!-- Tiny playful quiz, loaded from data/quiz.json -->
+          <div class="quiz-divider" aria-hidden="true"></div>
+          <div class="quiz" id="quiz">
+            <p class="quiz-label handwritten">a tiny quiz, just for fun</p>
+            <div id="quiz-question"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================ -->
+      <!-- CHAPTER 6 — LETTER                                            -->
+      <!-- ============================================================ -->
+      <section class="chapter chapter--letter" id="chapter-6" data-chapter="6">
+        <div class="chapter-inner chapter-inner--narrow">
+
+          <div class="beat beat--compact">
+            <p class="kicker">chapter five</p>
+          </div>
+
+          <div class="beat">
+            <p class="body-copy">Before this website ends...</p>
+          </div>
+
+          <div class="beat">
+            <p class="body-copy">there's still one last sugar truck left.</p>
+          </div>
+
+          <div class="beat">
+            <p class="body-copy">This one's just for you ❤️</p>
+          </div>
+
+          <div class="letter" id="letter">
+            <div class="letter-seal" id="letter-seal">
+              <span class="seal-mark">✦</span>
+              <span class="seal-label handwritten">Open</span>
+            </div>
+
+            <div class="letter-paper" id="letter-paper">
+              <div class="letter-text handwritten" id="letter-text"></div>
+              <button class="letter-skip" id="letter-skip" hidden>tap to reveal all</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================ -->
+      <!-- CHAPTER 7 — FUTURE / ENDING                                    -->
+      <!-- Slowest chapter on the site. Every line is its own beat.       -->
+      <!-- This is where "My First. And Forever." finally gets named —    -->
+      <!-- do not move that reveal earlier than this.                     -->
+      <!-- ============================================================ -->
+      <section class="chapter chapter--future" id="chapter-7" data-chapter="7">
+        <!--
+          BACKGROUND VIDEO / GIF PLACEHOLDER
+          Drop a video at: assets/videos/future.mp4
+          OR a gif at: assets/gifs/future.gif  (video takes priority if both exist)
+        -->
+        <div class="future-background">
+
+      <video
+          class="future-media"
+          id="future-video"
+          autoplay
+          muted
+          loop
+          playsinline
+          onerror="this.style.display='none'"
+      >
+          <source src="assets/videos/future.mp4" type="video/mp4">
+      </video>
+
+      <img
+          class="future-media future-media--gif"
+          id="future-gif"
+          src="assets/gifs/future.gif"
+          alt=""
+          onerror="this.style.display='none'"
+      >
+
+      <div class="future-overlay"></div>
+
+  </div>
+
+        <div class="beats" id="ch7-beats">
+
+          <div class="beat"><p class="line">Thank you...</p></div>
+          <div class="beat"><p class="line">for finding me.</p></div>
+
+          <div class="beat"><p class="line">For sitting through every unnecessarily<br>long paragraph.</p></div>
+          <div class="beat"><p class="line">For letting me eat your ears off,<br>more times than either of us can count.</p></div>
+          <!-- callback: pays off the "ears" joke from Chapter 1 -->
+
+          <div class="beat beat--pause" aria-hidden="true"><span class="pause-mark">···</span></div>
+
+          <div class="beat"><p class="line">For becoming the friend I told everything<br>to, before I even realized that's what<br>was happening.</p></div>
+          <div class="beat"><p class="line">For turning 4 AM conversations into<br>a whole future neither of us saw coming.</p></div>
+          <div class="beat"><p class="line">For somehow choosing me<br>despite the sugar trucks.</p></div>
+          <!-- callback: pays off the "sugar trucks" mentions from Chapters 1 and 6 -->
+
+          <div class="beat beat--pause" aria-hidden="true"><span class="pause-mark">···</span></div>
+
+          <div class="beat"><p class="line">There's a version of us that's still<br>ahead of us </p></div>
+
+          <div class="beat beat--compact"><p class="line">First hug.</p></div>
+          <div class="beat beat--compact"><p class="line">First date.</p></div>
+          <div class="beat beat--compact"><p class="line">First Onam.</p></div>
+          <div class="beat beat--compact"><p class="line">First picture, actually together —<br>not through a screen.</p></div>
+          <div class="beat beat--compact"><p class="line">First walk, just the two of us,<br>no call lag in between.</p></div>
+          <div class="beat"><p class="line">First everything, really.</p></div>
+
+          <div class="beat beat--pause" aria-hidden="true"><span class="pause-mark">···</span></div>
+
+          <div class="beat beat--compact">
+            <p class="kicker">the reason this whole website exists</p>
+            <h2 class="chapter-title">My First.<br>And Forever.</h2>
+          </div>
+
+          <div class="beat"><p class="line">You already know why those four words<br>mean more to me than anything else<br>I could write here.</p></div>
+          <div class="beat"><p class="line">I'm not going to explain it again.</p></div>
+          <div class="beat"><p class="line">You already know.</p></div>
+
+          <div class="beat beat--pause" aria-hidden="true"><span class="pause-mark">···</span></div>
+
+          <div class="beat beat--big">
+            <p class="line line--handwritten-big handwritten">Happy Girlfriend's Day, Kamya </p>
+          </div>
+
+          <div class="beat beat--pause" aria-hidden="true"><span class="pause-mark">···</span></div>
+
+          <div class="beat beat--compact"><p class="line line--ps handwritten">PS.</p></div>
+          <div class="beat"><p class="line line--ps handwritten">I'm still going to eat your ears off.</p></div>
+          <div class="beat"><p class="line line--ps handwritten">Just this time...</p></div>
+          <div class="beat">
+            <p class="line line--ps handwritten">you'll finally be close enough<br>to poke my eyes.</p>
+          </div>
+          <!-- callback: pays off the "eye-poke" joke and the Ch1 "ears" aside -->
+
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Fixed final curtain — fades the whole screen to black after the last line, quietly -->
+    <div id="curtain" aria-hidden="true"></div>
+
+    <script src="script.js"></script>
+  </body>
+  </html>
